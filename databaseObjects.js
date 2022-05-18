@@ -7,6 +7,10 @@ const sequelize = new Sequelize('discordbot', 'username', 'password', {
   storage: 'database.sqlite',
 });
 
+const StocksOwned = require('./models/stocks-owned.js')(
+  sequelize,
+  Sequelize.DataTypes,
+);
 const TicTacToe = require('./models/tictactoe.js')(
   sequelize,
   Sequelize.DataTypes,
@@ -14,4 +18,5 @@ const TicTacToe = require('./models/tictactoe.js')(
 
 module.exports = {
   TicTacToe,
+  StocksOwned,
 };
