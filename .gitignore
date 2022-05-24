@@ -1,6 +1,7 @@
 #dependencies
-/node_modules
+/bot/node_modules
+/bot/config.json
+/bot/database.sqlite
 /config.json
-/database.sqlite
 
 #comment
