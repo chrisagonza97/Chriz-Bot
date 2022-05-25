@@ -1,10 +1,18 @@
 .container {
   padding: 0 2rem;
 }
-
+.home{
+  background-image: url(/images/stocks-background.jpg);
+  background-size: cover;
+  background-repeat:repeat-y;
+}
+.bot_description{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 0rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -40,9 +48,10 @@
 }
 
 .title {
-  margin: 0;
+  margin: 4rem;
   line-height: 1.15;
   font-size: 4rem;
+  
 }
 
 .title,
@@ -112,5 +121,23 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .title{
+    margin:1rem;
+    font-size: 2rem;
+  }
+}
+
+@media (min-height: 1200px){
+  .main{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
+    h1{
+      font-size: 4rem;
+    }
+    h2{
+      font-size: 2rem;
+    }
   }
 }
