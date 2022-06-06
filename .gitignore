@@ -3,5 +3,6 @@
 /bot/config.json
 /bot/database.sqlite
 /config.json
+/site/backend/config.json
 
 #comment
